@@ -35,7 +35,7 @@ public class CustomTestController {
                 .userId("example")
                 .email("example@naver.com").build();
 
-        CustomApiResponse<Object> responseBody = CustomApiResponse.createSuccess(HttpStatus.OK.value(), "", "회원 조회에 성공했습니다.");
+        CustomApiResponse<Object> responseBody = CustomApiResponse.createSuccess(HttpStatus.OK.value(), dto, "회원 조회에 성공했습니다.");
         return ResponseEntity.status(HttpStatus.OK).body(responseBody);
     }
 }
