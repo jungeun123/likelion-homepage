@@ -27,10 +27,11 @@ public class CustomTestController {
         // userId : example
         // email : example@naver.com
 
-        // dto 클래스
+        // dto 클래스 방법 1 : new
         // SimpleDto dto = new SimpleDto("example", "example@naver.com");
 
-        SimpleDto.builder()
+        // dto 클래스 방법 2 : builder
+        SimpleDto dto = SimpleDto.builder()
                 .userId("example")
                 .email("example@naver.com").build();
 
