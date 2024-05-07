@@ -18,7 +18,7 @@ public class UserTestController {
     public ResponseEntity<CustomApiResponse<?>> signup(@Valid @RequestBody SignupDto dto) {
 
         // 회원가입
-        System.out.println(dto.getUserId());
+        System.out.println(dto.getEmail());
         // 응답
         CustomApiResponse<Object> reponseBody = CustomApiResponse.createSuccess(HttpStatus.OK.value(), null, "회원가입에 성공했습니다.");
 
