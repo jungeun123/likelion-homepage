@@ -1,5 +1,6 @@
-package com.homepage.likelion.test;
+package com.homepage.likelion.test.tmp.controller;
 
+import com.homepage.likelion.test.tmp.dto.SignupDto;
 import com.homepage.likelion.util.response.CustomApiResponse;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
